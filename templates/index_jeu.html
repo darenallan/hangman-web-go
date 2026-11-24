@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Pendu</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="jeu" style="background-image: url('/static/jeu.png'); background-size: cover; background-position: center;">
+    <div class="container-pendu">
+        <h1>Jeu du Pendu</h1>
+        <div class="mot-affiche">{{.MotAffiche}}</div>
+        <div class="tentatives">Tentatives restantes : {{.Tentatives}}</div>
+         <img src="/static/hangman-{{.ImageHangman}}.svg" alt="Etape du hangman">
+        <form method="POST" action="/jeu">
+  <input id="lettre" autofocus type="text" name="lettre" maxlength="1" required />
+  <button class="btn" type="submit">Entrer</button>
+        </form>
+        <div class="lettres-utilisees">Lettres utilisées : {{.LettresUtilisees}}</div>
+        <div class="message">{{.Message}}</div>
+        <div class="recommencer">
+            <form method="GET" action="/jeu">
+                <input type="hidden" name="recommencer" value="true" />
+                <button class="btn" type="submit">Recommencer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

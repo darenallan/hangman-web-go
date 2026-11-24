@@ -1,0 +1,281 @@
+/*PAGE D'ACCUEIL */
+.PRINCIPALE{
+  background-image: url('accueil.png'); /* Image de fond pour la page d'accueil */
+  background-size: cover; /* L'image couvre tout l'espace disponible */
+  background-position: center; /* Centre l'image de fond */
+  min-height: 100vh; /* Hauteur minimale de 100% de la hauteur de la fenêtre */
+  font-family: 'Roboto', sans-serif; /* Police de caractères principale */
+  margin: 0; /* Supprime les marges extérieures */
+  padding: 0; /* Supprime les marges intérieures */
+  display: flex; /* Active le mode flexbox */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  text-align: center; /* Centre le texte */
+  color: var(--texte-clair); /* Couleur du texte (variable CSS) */
+}
+
+/* Style du titre principal H1 - Effet brillant amélioré */
+h1{
+  font-size: 52px; /* Taille de la police à 52 pixels */
+  letter-spacing: 2px; /* Espacement entre les lettres de 2 pixels */
+  font-family: 'Times New Roman', serif; /* Police de caractères serif */
+  color: #FFD700; /* Couleur dorée pour le texte */
+  text-shadow: /* Ombres multiples pour effet brillant */
+    0 0 10px #FFA500, /* Ombre orange claire */
+    0 0 20px #FF8C00, /* Ombre orange foncée */
+    0 0 30px #FF6347, /* Ombre rouge-tomate */
+    0 0 40px #FF4500, /* Ombre rouge-orange */
+    2px 2px 4px rgba(0,0,0,0.8); /* Ombre noire pour contraste */
+  background-clip: text; /* Clip le fond sur le texte */
+  filter: drop-shadow(0 0 15px rgba(255,215,0,0.8)); /* Filtre d'ombre portée dorée */
+}
+
+/* Style du sous-titre H2 - Plus visible avec brillance */
+h2{
+  color: #F0F0F0; /* Couleur gris très clair */
+  font-size: 42px; /* Taille de la police à 42 pixels */
+  margin-bottom: 40px; /* Marge inférieure de 40 pixels */
+  text-shadow: /* Ombres pour effet brillant */
+    0 0 8px rgba(255,255,255,0.8), /* Ombre blanche lumineuse */
+    0 0 15px rgba(200,200,255,0.6), /* Ombre bleutée */
+    2px 2px 4px rgba(0,0,0,0.9); /* Ombre noire pour profondeur */
+  font-weight: 500; /* Épaisseur de police moyenne */
+}
+
+/* Style des images (ex: logo, pendu) */
+img{
+  background-color: var(--bleu-panneau); /* Couleur de fond (variable CSS) */
+  border-radius: 40px; /* Coins arrondis de 40 pixels */
+  box-shadow: /* Ombres portées pour relief */
+    0 10px 25px rgba(0,0,0,0.6), /* Ombre noire profonde */
+    0 0 20px rgba(255,165,0,0.4); /* Halo orange */
+  width: 50%; /* Largeur de 50% du conteneur parent */
+}
+
+/* BOUTONS - Style bois avec brillance */
+.btn{
+  padding: 14px 32px; /* Marges intérieures verticales 14px, horizontales 32px */
+  font-size: 18px; /* Taille de la police à 18 pixels */
+  font-weight: 700; /* Épaisseur de police grasse */
+  color: #FFFACD; /* Couleur jaune citron clair */
+  background: linear-gradient(180deg, /* Gradient vertical pour effet bois */
+    #F4A460 0%, /* Couleur sable en haut */
+    #E8A030 20%, /* Couleur or */
+    #CD7F32 40%, /* Couleur bronze */
+    #B8652E 60%, /* Couleur marron clair */
+    #8B4513 80%, /* Couleur marron cuir */
+    #654321 100% /* Couleur marron foncé en bas */
+  );
+  border-radius: 12px; /* Coins arrondis de 12 pixels */
+  border: 3px solid #4a2c0a; /* Bordure marron foncé de 3 pixels */
+  cursor: pointer; /* Change le curseur en main au survol */
+  transition: all 0.25s ease; /* Transition douce de 0.25 secondes */
+  box-shadow: /* Ombres multiples pour relief */
+    0 6px 15px rgba(0,0,0,0.5), /* Ombre portée noire */
+    inset 0 2px 4px rgba(255,255,255,0.4), /* Lumière intérieure en haut */
+    0 0 15px rgba(244,164,96,0.5); /* Halo couleur sable */
+  text-shadow: /* Ombres du texte */
+    0 0 8px rgba(255,250,205,0.8), /* Halo jaune clair */
+    2px 2px 3px rgba(0,0,0,0.9); /* Ombre noire pour lisibilité */
+}
+
+/* Effet au survol du bouton - Brillance intense */
+.btn:hover{
+  background: linear-gradient(180deg, /* Gradient inversé au survol */
+    #8B4513 0%, /* Marron cuir en haut */
+    #654321 20%, /* Marron foncé */
+    #4A2512 40%, /* Marron très foncé */
+    #3D1C0D 60%, /* Marron quasi-noir */
+    #2E1409 80%, /* Marron très sombre */
+    #1F0D05 100% /* Presque noir en bas */
+  );
+  color: #FFEB3B; /* Couleur jaune vif */
+  border-color: #FF6B00; /* Bordure orange vif */
+  transform: translateY(-3px) scale(1.05); /* Monte de 3px et agrandit de 5% */
+  box-shadow: /* Ombres intensifiées au survol */
+    0 10px 25px rgba(0,0,0,0.7), /* Ombre portée plus forte */
+    inset 0 0 20px rgba(255,140,0,0.6), /* Lumière intérieure orange */
+    0 0 30px rgba(255,165,0,0.8); /* Halo orange intense */
+  text-shadow: /* Effet brillant du texte */
+    0 0 10px #FFEB3B, /* Halo jaune */
+    0 0 20px #FFA500, /* Halo orange */
+    0 0 30px #FF8C00, /* Halo orange foncé */
+    2px 2px 4px rgba(0,0,0,1); /* Ombre noire pour contraste */
+}
+
+/* Effet au clic sur le bouton */
+.btn:active{
+  transform: scale(0.97); /* Réduit légèrement le bouton à 97% */
+  box-shadow: inset 0 3px 8px rgba(0,0,0,0.6); /* Ombre intérieure pour effet enfoncé */
+}
+
+/*  PAGE DE JEU  */
+.jeu{
+  font-family: 'Arial', sans-serif; /* Police sans-serif pour la page de jeu */
+  background-image: url('/static/jeu.png'); /* Image de fond pour la page de jeu */
+  background-size: cover; /* L'image couvre tout l'espace */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  min-height: 100vh; /* Hauteur minimale de 100% de la fenêtre */
+  display: flex; /* Active le mode flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  color: var(--texte-clair); /* Couleur du texte (variable CSS) */
+}
+
+/*   PANNEAU DU PENDU - Style bulle avec brillance */
+.container-pendu{
+  background: rgba(255, 255, 255, 0.12); /* Fond blanc semi-transparent (12% d'opacité) */
+  padding: 32px; /* Marges intérieures de 32 pixels */
+  border-radius: 30px; /* Coins très arrondis de 30 pixels */
+  border: 2px solid rgba(255, 165, 0, 0.6); /* Bordure orange semi-transparente */
+  box-shadow: /* Ombres multiples pour effet de profondeur */
+    0 10px 30px rgba(255, 140, 0, 0.4), /* Ombre portée orange */
+    inset 0 0 30px rgba(255, 255, 255, 0.1), /* Lumière intérieure blanche */
+    0 0 20px rgba(255, 165, 0, 0.5); /* Halo orange */
+  width: 55%; /* Largeur de 55% du conteneur parent */
+  margin: 20px auto; /* Marges verticales 20px, centré horizontalement */
+  text-align: center; /* Centre le texte */
+  display: flex; /* Active le mode flexbox */
+  flex-direction: column; /* Disposition en colonne */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+/*MOT À DEVINER - Plus visible avec brillance */
+.mot-affiche{
+  font-size: 26px; /* Taille de police à 26 pixels */
+  font-weight: bold; /* Texte en gras */
+  margin: 30px 0; /* Marges verticales de 30 pixels */
+  letter-spacing: 14px; /* Espacement entre lettres de 14 pixels */
+  color: #E0E0E0; /* Couleur gris clair */
+  font-family: 'Courier New', monospace; /* Police à espacement fixe */
+  text-shadow: /* Ombres pour visibilité */
+    0 0 10px rgba(255,255,255,0.8), /* Halo blanc lumineux */
+    2px 2px 4px rgba(0,0,0,0.9); /* Ombre noire pour contraste */
+}
+
+/* Style pour les lettres trouvées - Effet brillant */
+.mot-affiche .trouve{
+  color: #FFD700; /* Couleur dorée pour les lettres trouvées */
+  text-shadow: /* Effet brillant pour les lettres trouvées */
+    0 0 10px #FFA500, /* Halo orange */
+    0 0 20px #FF8C00, /* Halo orange foncé */
+    2px 2px 4px rgba(0,0,0,0.9); /* Ombre noire */
+}
+
+/* TENTATIVES & LETTRES UTILISÉES - Brillance améliorée */
+.tentatives,
+.lettres-utilisees{
+  color: #FFD700; /* Couleur dorée */
+  font-weight: bold; /* Texte en gras */
+  font-size: 24px; /* Taille de police à 24 pixels */
+  font-family: 'Times New Roman', serif; /* Police serif */
+  text-shadow: /* Ombres pour effet brillant */
+    0 0 10px rgba(255,215,0,0.9), /* Halo doré intense */
+    0 0 20px rgba(255,165,0,0.7), /* Halo orange */
+    2px 2px 4px rgba(0,0,0,0.9); /* Ombre noire */
+}
+
+/* FORMULAIRE */
+.form-jeu{
+  display: flex; /* Active le mode flexbox */
+  flex-direction: row; /* Disposition en ligne */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+  gap: 12px; /* Espacement de 12 pixels entre les éléments */
+  margin: 24px auto; /* Marges verticales 24px, centré horizontalement */
+}
+
+/* Centrer le formulaire inline (sans classe) */
+form {
+  display: flex; /* Active le mode flexbox */
+  flex-direction: column; /* Disposition en colonne */
+  align-items: center; /* Centre horizontalement */
+  gap: 10px; /* Espacement de 10 pixels entre les éléments */
+}
+
+/* Champ de saisie de la lettre - Effet brillant */
+#lettre{
+  width: 70px; /* Largeur de 70 pixels */
+  height: 70px; /* Hauteur de 70 pixels */
+  font-size: 34px; /* Taille de police à 34 pixels */
+  border: 3px solid #FFD700; /* Bordure dorée de 3 pixels */
+  border-radius: 12px; /* Coins arrondis de 12 pixels */
+  text-align: center; /* Centre le texte */
+  outline: none; /* Supprime le contour par défaut au focus */
+  background: linear-gradient(135deg, #FFFACD, #FFF8DC); /* Gradient diagonal jaune clair */
+  color: #2C1810; /* Couleur marron foncé pour le texte */
+  transition: 0.25s ease; /* Transition douce de 0.25 secondes */
+  box-shadow: /* Ombres pour relief */
+    0 4px 10px rgba(0,0,0,0.3), /* Ombre portée noire */
+    0 0 15px rgba(255,215,0,0.4); /* Halo doré */
+  text-transform: uppercase; /* Force l’affichage en majuscules */
+}
+
+/* Effet quand le champ est sélectionné (focus) - Brillance intense */
+#lettre:focus{
+  box-shadow: /* Ombres intensifiées au focus */
+    0 0 15px rgba(255,215,0,1), /* Halo doré intense */
+    0 0 25px rgba(255,165,0,0.8), /* Halo orange */
+    0 4px 15px rgba(0,0,0,0.4); /* Ombre portée noire */
+  border-color: #FFA500; /* Bordure orange au focus */
+  transform: scale(1.05); /* Agrandit de 5% au focus */
+}
+
+/* Placeholder en majuscules pour cohérence */
+#lettre::placeholder{
+  text-transform: uppercase; /* Placeholder en majuscules */
+}
+
+/* PAGE RÉSULTAT */
+.resultat{
+  font-family: 'Roboto', sans-serif; /* Police Roboto */
+  background-image: url('resultat.png'); /* Image de fond pour la page résultat */
+  background-size: cover; /* L'image couvre tout l'espace */
+  background-position: center; /* Centre l'image */
+  min-height: 100vh; /* Hauteur minimale de 100% de la fenêtre */
+  display: flex; /* Active le mode flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  color: var(--texte-clair); /* Couleur du texte (variable CSS) */
+  text-align: center; /* Centre le texte */
+}
+
+/* Conteneur du message de résultat */
+.container-resultat{
+  padding: 50px; /* Marges intérieures de 50 pixels */
+  border-radius: 14px; /* Coins arrondis de 14 pixels */
+  background: rgba(0,0,0,0.3); /* Fond noir semi-transparent (30% d'opacité) */
+}
+
+/* Message de victoire ou défaite - Effet brillant intense */
+.message{
+  font-size: 34px; /* Taille de police à 34 pixels */
+  margin: 20px 0; /* Marges verticales de 20 pixels */
+  color: #FFD700; /* Couleur dorée */
+  text-shadow: /* Ombres multiples pour effet très brillant */
+    0 0 15px #FFA500, /* Halo orange */
+    0 0 30px #FF8C00, /* Halo orange foncé */
+    0 0 45px #FF6347, /* Halo rouge-tomate */
+    3px 3px 6px rgba(0,0,0,0.9); /* Ombre noire pour contraste */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style des liens - Brillance */
+a{
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #FFD700; /* Couleur dorée pour les liens */
+  text-shadow: /* Ombres pour effet brillant */
+    0 0 10px rgba(255,215,0,0.8), /* Halo doré */
+    2px 2px 4px rgba(0,0,0,0.9); /* Ombre noire */
+  transition: all 0.3s ease; /* Transition douce de 0.3 secondes */
+}
+
+a:hover{
+  color: #FFEB3B; /* Couleur jaune vif au survol */
+  text-shadow: /* Ombres intensifiées au survol */
+    0 0 15px #FFD700, /* Halo doré */
+    0 0 25px #FFA500, /* Halo orange */
+    2px 2px 4px rgba(0,0,0,1); /* Ombre noire intense */
+  transform: scale(1.05); /* Agrandit de 5% au survol */
+}

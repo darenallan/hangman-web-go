@@ -1,0 +1,7 @@
+fromage 
+ordinateur 
+avion 
+piano 
+arbre 
+golang 
+école

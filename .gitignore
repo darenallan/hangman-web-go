@@ -1,0 +1,11 @@
+# Binaires
+app
+*.exe
+
+# Fichiers de travail non publiés
+brouillon/
+*.pdf
+
+# IDE
+.idea/
+.vscode/
